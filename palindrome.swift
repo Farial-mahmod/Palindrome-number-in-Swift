@@ -1,24 +1,26 @@
-// index variable to loop through
-var i = 0
+var reverse = 0
 
-// initializing an array of type Int
-var arr : [Int] = [1, 2 , 1, 2, 5]
+// original is the variable to be tested whether it is Palindrome or not, you may change it to reproduce
+var original = 1111
+var num = original
 
-// function to test a number in the form of array
-func palin() -> Bool{
 
-for i in arr{
-    if(arr[i] != arr.count - i - 1){
-    print("Not any Palindrome number.")   
-    return false
+// function to reverse the original number and store into the 'reverse' variable
+func rever() {
+    while(num>0){
+    reverse = reverse * 10 + original % 10
+    num = num / 10
     }
-    
+
+// comparing the reversed number to the original one
+  if(original==reverse){
+      print("\(original) is a Palindrome number.")
+  }
+  else{
+  print("\(original) is not a Palindrome number.")
+  }
+
 }
 
-print("Palindrome number.")
-return true
-
-}
-
-// calling the function
-palin()
+// calling the function finally
+rever()
