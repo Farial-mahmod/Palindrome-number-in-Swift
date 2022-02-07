@@ -4,8 +4,8 @@ Wikipedia definition of Palindrome "A palindrome is a word, phrase, number, or a
 Example: madam or [1,2,2,1] .
 
 ## Process & Logic:
-This is a Swift program that checks if a number is Palindrome . It takes the number in the form of an array and loops through the array to match the given numbers . If the first and the last character match, then the loop continues to check whether the character at first+1 and the character at last-1 match or not. 
-This process continues to traverse all the elements in the form of an array.
+This is a Swift program that checks if a number is Palindrome . It takes the number (stored in the variable 'original' and then starts reversing it - later storing into 'reverse' variable .
+If the reverse equals to original, then the operation succeeds .
 
 ## Output:
 Palindrome if the reverse of the given phrase or number is equal to the given phrase / number .
